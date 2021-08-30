@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Train+One&display=swap");
+body {
+  font-family: "Acme", monospace;
+  min-height: 854px;
+  background-image: url("https://wallpaperaccess.com/full/476126.jpg");
+  background-color: #555;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding-bottom: 20vh;
+}
+
+.container {
+  display: grid(auto 80rem);
+  text-align: center;
+  padding: 20px;
+}
+
+.escolha-atributo {
+  color: #000;
+  font-size: 3rem;
+  text-shadow: rgb(5, 4, 4) 1px -1px, rgb(16, 202, 84) -1px 1px,
+    rgb(10, 138, 53) 1px 1px, rgb(8, 189, 110) -1px -1px;
+}
+
+.page-logo {
+  width: 20%;
+}
+
+.page-title {
+  font-size: 8.5rem;
+  color: rgb(2, 2, 2);
+  margin: 5px 0;
+  text-shadow: #fff 2px -2px, rgb(15, 12, 192) -1px 1px, rgb(7, 4, 4) 1px 1px,
+    rgb(15, 204, 110) -1px -1px;
+}
+.page-title span {
+  color: rgb(225, 11, 11);
+  color: radial-gradient(rgb(5, 92, 34) 05%, transparent 0),
+    radial-gradient(rgb(11, 140, 101) 05%, transparent 0);
+  text-shadow: #fff 2px -2px, rgb(15, 12, 192) -1px 1px, rgb(7, 4, 4) 1px 1px,
+    rgb(15, 204, 110) -1px -1px;
+}
+
+button {
+  color: rgb(225, 11, 11);
+  cursor: pointer;
+  font-family: "Acme";
+  padding: 0.938rem 1.875rem;
+  border: 0.25rem solid rgb(255, 255, 255);
+  border-color: #fff;
+  border-radius: 1.875rem;
+  box-shadow: 0.313rem 0.125rem 0.125rem 0 rgb(177, 174, 174);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+  color: #ffffff;
+  background: #08d051;
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s all ease;
+}
+
+.button-jogar,
+.button-proxima {
+  width: 30rem;
+  /*margin-left: 30rem;*/
+  padding: 0.938rem 1.875rem;
+  align-items: auto;
+  margin-bottom: 3rem;
+}
+
+.button-jogar:hover,
+.button-proxima:hover {
+  padding: 0.938rem 1.875rem;
+  align-items: auto;
+  margin-bottom: 3rem;
+  background: #ffffff;
+  color: #08d051;
+  border: 0.25rem solid rgb(255, 255, 255);
+  border-color: #fff;
+  border-radius: 1.875rem;
+  box-shadow: 0.313rem 0.125rem 0.125rem 0 #08d051;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgb(0, 0, 0);
+}
+
+#carta-jogador,
+#carta-maquina {
+  font-family: "Acme";
+  width: 400px;
+  height: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-position-x: 15px;
+  background-position-y: 10px;
+  border-radius: 33px;
+  align-items: auto;
+}
+
+#carta-jogador {
+  margin-left: 15rem;
+}
+
+#carta-maquina {
+  margin-right: 20rem;
+}
+
+#carta-jogador h3 {
+  text-align: center;
+}
+
+.carta-imagem {
+  border: 1px solid black;
+  height: 100px;
+  margin: 10px;
+  margin-top: 13px;
+}
+
+.carta-imagem img {
+  width: 100%;
+  height: 900%;
+}
+
+.carta-status {
+  height: 160px;
+  margin: 2rem;
+  color: white;
+  z-index: 2;
+}
+
+.carta-status input {
+  margin: 20px 10px;
+}
+
+.carta-status p {
+  margin-bottom: 2rem;
+}
+
+.resultado-final {
+  color: rgb(225, 11, 11);
+  text-shadow: #fff 2px -2px, rgb(15, 12, 192) -1px 1px, rgb(7, 4, 4) 1px 1px,
+    rgb(15, 204, 110) -1px -1px;
+  font-size: 6rem;
+  text-transform: uppercase;
+  padding: 1rem;
+  background-color: unset;
+  margin: 0 0;
+}
+
+.--spacing {
+  margin-left: 2.5rem;
+}
+
+form {
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.carta-subtitle {
+  z-index: 2;
+  position: absolute;
+  top: 16px;
+  left: 37px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#cartas {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3.125rem;
+  align-items: center;
+  padding: 2.5rem;
+}
+
+#placar,
+#quantidade-cartas {
+  margin-top: 0.5rem;
+  color: rgb(19, 17, 17);
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: #000 2px -2px, rgb(15, 204, 110) -1px 1px, rgb(7, 4, 4) 1px 1px,
+    rgb(15, 204, 110) -1px -1px;
+}
